@@ -10,6 +10,8 @@
 }
 body {
     height: 100vh;
+    background: linear-gradient(-50deg, #e66465, #9198e5);
+    
 }
 main {
     position: relative;
@@ -35,6 +37,9 @@ section.player_1{
     margin-top: 8%; 
     text-align: center;
     padding-top:1%;
+}
+.player_winner{
+    color :black;
 }
 h2 {
     text-align: center;
@@ -73,10 +78,10 @@ h2 {
 }
 button {
     position: absolute;
-    color: #e6845d;
-    background: none;
+    color: black;
     cursor: pointer;
     font-size: 1rem;
+    font-weight:700;
     height: auto;
     text-align: center;
     padding: 5px;
@@ -86,34 +91,26 @@ button {
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
-    border: 1px solid black;
-    border-radius: 5%;
 }
 button.btn_new{
     margin-top:5% ;
-    margin-left:46%;
-    background-color: RED;
-    
+    margin-left:46%;  
 }
+
 button.btn_roll{
     margin-top:30%;
     margin-left:45%;
-    
-    background-color: BLUE;
 }
 button.btn_hold{
     margin-top:35%;
-    margin-left:50%;
-    background-color:yellow;
-    
+    margin-left:50%;  
 }
+
 img{
     position: absolute;
     cursor: pointer;
     width: 200px;
     height: 200px;
- 
-
     margin-left:45%;
     margin-top: 10%;
     display: flex;
@@ -121,17 +118,5 @@ img{
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
-    border: 1px solid black;
-    border-radius: 5%;
-
 }
 
-
-
-/* Media Queries */
-
-@media screen and (max-width : 840px) {
-    .dice {
-        top: 340px;
-    }
-   }
